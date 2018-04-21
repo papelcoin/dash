@@ -1,4 +1,4 @@
-Source: dash
+Source: papel
 Section: utils
 Priority: optional
 Maintainer: Holger Schinzel <holger@dash.org>
@@ -28,7 +28,7 @@ Homepage: https://www.dash.org/
 Vcs-Git: git://github.com/dashpay/dash.git
 Vcs-Browser: https://github.com/dashpay/dash
 
-Package: dashd
+Package: paled
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -41,7 +41,7 @@ Description: peer-to-peer network based digital currency - daemon
  This package provides the daemon, dashd, and the CLI tool
  dash-cli to interact with the daemon.
 
-Package: dash-qt
+Package: oaoek-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -51,7 +51,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  and issuing money are carried out collectively by the network. Dash Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Dash-Qt, a GUI for Dash based on Qt.
+ This package provides Papel-Qt, a GUI for Dash based on Qt.
 
 Package: dash-tx
 Architecture: any

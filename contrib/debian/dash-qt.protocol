@@ -1,6 +1,6 @@
 [Protocol]
-exec=dash-qt '%u'
-protocol=dash
+exec=papel-qt '%u'
+protocol=papel
 input=none
 output=none
 helper=true

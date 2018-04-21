@@ -1,10 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Dash
-Comment=Dash P2P Cryptocurrency
-Comment[fr]=Dash, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Dash, eşten eşe kriptografik sanal para birimi
-Exec=dash-qt %u
+Name=Papel
+Comment=Papel P2P Cryptocurrency
+Comment[fr]=Papel, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Papel, eşten eşe kriptografik sanal para birimi
+Exec=papel-qt %u
 Terminal=false
 Type=Application
 Icon=dash128
