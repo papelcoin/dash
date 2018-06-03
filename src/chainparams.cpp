@@ -74,8 +74,8 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 525600; // Yearly production halving 24*60*365
         consensus.nMasternodePaymentsStartBlock = 1000; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-        consensus.nMasternodePaymentsIncreaseBlock = 262800;
-        consensus.nMasternodePaymentsIncreasePeriod = 262800;
+        consensus.nMasternodePaymentsIncreaseBlock = 43000;
+        consensus.nMasternodePaymentsIncreasePeriod = 43000;
         consensus.nInstantSendKeepLock = 24;
         consensus.nBudgetPaymentsStartBlock = 525600;
         consensus.nBudgetPaymentsCycleBlocks = 43200; // ~(60*24*30), actual number of blocks per month is 200700 / 12 = 16725
@@ -144,7 +144,7 @@ public:
 
         
         vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
-        vSeeds.push_back(CDNSSeedData("2", "192.241.130.43"));
+//        vSeeds.push_back(CDNSSeedData("2", "192.241.130.43"));
 
         // dash addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,56);
@@ -162,7 +162,7 @@ public:
 
         //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
+        fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
@@ -259,8 +259,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         
-        vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
-        vSeeds.push_back(CDNSSeedData("2", "192.241.130.43"));
+//        vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
+//        vSeeds.push_back(CDNSSeedData("2", "192.241.130.43"));
 
 
         // Testnet dash addresses start with 'y'
@@ -279,7 +279,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
