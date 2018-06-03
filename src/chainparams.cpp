@@ -144,7 +144,7 @@ public:
 
         
         vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
-//        vSeeds.push_back(CDNSSeedData("2", "192.241.130.43"));
+        vSeeds.push_back(CDNSSeedData("2", "209.97.130.217"));
 
         // dash addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,56);
