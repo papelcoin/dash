@@ -19,12 +19,6 @@ You can transfer your PapelCoins within PapelPay application with zero fee to mo
 
 PapelPay system will support other crypto currencies to make payments and transfers with zero fee in the future.
 
-License
--------
-
-Papel Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
-
 Specifications
 -------------------
 
@@ -45,3 +39,8 @@ Masternode Reward: 80%
 Mining Reward: 20%
 
 Masternode Colleteral: 10.000 PAPEL
+
+License
+-------
+
+Papel Core is released under the terms of the MIT license. More information at: https://opensource.org/licenses/MIT.
