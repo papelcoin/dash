@@ -143,8 +143,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x68c849fa91ffbd346344b15925b7b7eb01a7f5f9374b3056c0a787495b490ed3"));
 
         
-//        vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
-//        vSeeds.push_back(CDNSSeedData("2", "209.97.130.217"));
+        vSeeds.push_back(CDNSSeedData("1", "167.99.203.231"));
+        vSeeds.push_back(CDNSSeedData("2", "209.97.130.217"));
 
         // dash addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,56);
@@ -160,12 +160,12 @@ public:
         // dash BIP44 coin type is '5'
         nExtCoinType = 5;
 
-        //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
+        fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true;
+        fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = false;
 
         nPoolMaxTransactions = 3;
