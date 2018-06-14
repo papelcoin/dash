@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Papel
+Comment=Papel P2P Cryptocurrency
+Comment[fr]=Papel, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Papel, eşten eşe kriptografik sanal para birimi
+Exec=papel-qt %u
+Terminal=false
+Type=Application
+Icon=dash128
+MimeType=x-scheme-handler/dash;
+Categories=Office;Finance;
