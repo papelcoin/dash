@@ -116,11 +116,15 @@ CMasternode::CollateralStatus CMasternode::CheckCollateral(const COutPoint& outp
         return COLLATERAL_UTXO_NOT_FOUND;
     }
 
-    if(coin.out.nValue != 10000 * COIN) {
+    nHeightRet = coin.nHeight;
+    
+    if(nHeightRet < 50000 && coin.out.nValue != 10000 * COIN) {
         return COLLATERAL_INVALID_AMOUNT;
     }
-
-    nHeightRet = coin.nHeight;
+    else if(nHeightRet >= 50000 && coin.out.nValue != 50000 * COIN) {
+        return COLLATERAL_INVALID_AMOUNT;
+    }
+    
     return COLLATERAL_OK;
 }
 
@@ -207,6 +211,7 @@ void CMasternode::Check(bool fForce)
         }
 
         bool fWatchdogActive = masternodeSync.IsSynced() && mnodeman.IsWatchdogActive();
+        
         bool fWatchdogExpired = (fWatchdogActive && ((GetAdjustedTime() - nTimeLastWatchdogVote) > MASTERNODE_WATCHDOG_MAX_SECONDS));
 
         LogPrint("masternode", "CMasternode::Check -- outpoint=%s, nTimeLastWatchdogVote=%d, GetAdjustedTime()=%d, fWatchdogExpired=%d\n",
@@ -252,7 +257,7 @@ bool CMasternode::IsInputAssociatedWithPubkey()
     uint256 hash;
     if(GetTransaction(vin.prevout.hash, tx, Params().GetConsensus(), hash, true)) {
         BOOST_FOREACH(CTxOut out, tx.vout)
-            if(out.nValue == 10000*COIN && out.scriptPubKey == payee) return true;
+            if(out.nValue == 50000*COIN && out.scriptPubKey == payee) return true;
     }
 
     return false;
