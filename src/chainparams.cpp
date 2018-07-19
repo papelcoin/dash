@@ -171,12 +171,11 @@ public:
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
         strSporkPubKey = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
-
+        
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  26, uint256S("0x0000094b996b26460d98d51ff8eb0dea73121ae84dd85b0fff8e8a73d8ee0af6"),
-               42036, uint256S("0x00000000000ac069704e71ab71bf4824f597b1421372c202dd66a259d08c93a5")
-             ),
+            (  26, uint256S("0x0000094b996b26460d98d51ff8eb0dea73121ae84dd85b0fff8e8a73d8ee0af6"))
+            ( 42036, uint256S("0x00000000000ac069704e71ab71bf4824f597b1421372c202dd66a259d08c93a5")),
             1532010501, // * UNIX timestamp of last checkpoint block
             50843,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
