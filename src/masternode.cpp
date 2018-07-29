@@ -118,10 +118,7 @@ CMasternode::CollateralStatus CMasternode::CheckCollateral(const COutPoint& outp
 
     nHeightRet = coin.nHeight;
     
-    if(nHeightRet < 70000 && coin.out.nValue != 10000 * COIN) {
-        return COLLATERAL_INVALID_AMOUNT;
-    }
-    else if(nHeightRet >= 70000 && coin.out.nValue != 50000 * COIN) {
+    if(coin.out.nValue != 50000 * COIN) {
         return COLLATERAL_INVALID_AMOUNT;
     }
     
