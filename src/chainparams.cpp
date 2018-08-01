@@ -170,7 +170,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
-        strSporkPubKey = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
+        strSporkPubKey = "04E5D6A01CE1BF85329A63B401CB93A75C932E06C7C2ECA24FD4B0838AAF51B268AF10F2D0237319FD0A085F4D81CD388DE85DBD27250B70FB00C6CE03B953B9FA";
         
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
