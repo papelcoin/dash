@@ -26,19 +26,19 @@ DASH Fork
 
 X11 Algorithm
 
-Premine: 10% (26.200.000 PAPEL)
+Premine: 9% (26.200.000 PAPEL)
 
 Block Reward: 250 (Yearly Halving)
 
 Block Time: 60 seconds
 
-Maximum Supply: 262.800.000 PAPEL
+Maximum Supply: 288.800.000 PAPEL
 
-Masternode Reward: 80%
+Masternode Reward: 90%
 
-Mining Reward: 20%
+Mining Reward: 10%
 
-Masternode Colleteral: 10.000 PAPEL
+Masternode Colleteral: 50.000 PAPEL
 
 License
 -------
